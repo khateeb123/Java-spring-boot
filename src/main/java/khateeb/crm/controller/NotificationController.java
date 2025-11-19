@@ -1,7 +1,9 @@
-package khateeb.crm;
+package khateeb.crm.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import khateeb.crm.service.notification.NotificationManager;
 
 
 @Controller

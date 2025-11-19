@@ -1,8 +1,6 @@
-package khateeb.crm;
+package khateeb.crm.service.notification;
 
-import org.springframework.stereotype.Service;
 
-@Service("email")
 public class EmailNotificationService implements NotificationService {
 
     @Override

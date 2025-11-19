@@ -1,9 +1,7 @@
-package khateeb.crm;
+package khateeb.crm.service.notification;
 
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Service;
 
-@Service
 public class NotificationManager {
 
     public NotificationService notificationService;

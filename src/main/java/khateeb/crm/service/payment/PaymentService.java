@@ -1,4 +1,4 @@
-package khateeb.crm;
+package khateeb.crm.service.payment;
 
 
 public interface PaymentService {

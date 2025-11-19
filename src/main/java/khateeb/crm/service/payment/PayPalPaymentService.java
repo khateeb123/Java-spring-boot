@@ -1,7 +1,6 @@
-package khateeb.crm;
+package khateeb.crm.service.payment;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Service;
 
 public class PayPalPaymentService implements PaymentService{
 

@@ -1,4 +1,4 @@
-package khateeb.crm;
+package khateeb.crm.service.payment;
 
 import org.springframework.beans.factory.annotation.Value;
 
