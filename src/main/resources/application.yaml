@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: crm
+
+paypal:
+ api-key: 19d8f7dfs07g90sd7fg87sdf90g879d8f7gd9s78fg
+
+stripe:
+ apiKey: kldsjflskdjflksdjflkdsjf
+ timeout: 1000
+ enable: true
