@@ -18,9 +18,8 @@ public class HomeController {
 @RequestMapping("/")
     public String home() {
 
-        // String type = "stripe";
-
-		orderService.processOrder(); 
+         String type = "stripe";
+		orderService.processOrder(type); 
         
         return "index.html";
     }

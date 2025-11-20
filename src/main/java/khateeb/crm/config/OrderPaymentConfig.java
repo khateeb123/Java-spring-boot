@@ -2,7 +2,7 @@ package khateeb.crm.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
+import java.util.Map;
 import khateeb.crm.service.order.OrderService;
 import khateeb.crm.service.payment.PayPalPaymentService;
 import khateeb.crm.service.payment.PaymentService;
@@ -22,7 +22,7 @@ public class OrderPaymentConfig {
     }
     
     @Bean
-    public OrderService order(){
-        return new OrderService(paypal());
+    public OrderService order(Map<String, PaymentService> paymentService){
+        return new OrderService(paymentService);
     }
 }
