@@ -4,9 +4,10 @@ import java.time.LocalDate;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.MapsId;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -23,7 +24,6 @@ import lombok.Setter;
 @Table(name="profiles")
 public class Profile {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
     @Column(nullable = true)
     private String bio;
@@ -33,4 +33,9 @@ public class Profile {
     private LocalDate dateOfBirth;
     @Column(nullable = true, name = "loyalty_points")
     private int loyaltyPoints;
+
+    @OneToOne
+    @JoinColumn(name = "id")
+    @MapsId
+    private User user;
 }

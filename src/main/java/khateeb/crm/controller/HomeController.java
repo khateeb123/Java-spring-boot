@@ -28,7 +28,7 @@ public class HomeController {
         data.put("premiumUser",true);
         data.put("father","shah");
         data.put("some","ahm");
-        data.put("power","young");
+        data.put("power","youdfdfng");
 
 for (Map.Entry<String, Object> sing : data.entrySet()) {
     System.out.println(sing.getKey());
